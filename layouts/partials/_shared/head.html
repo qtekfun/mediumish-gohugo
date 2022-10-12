@@ -27,4 +27,8 @@
 	{{ $style := resources.Get . }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen">
 	{{- end }}
+
+	<!-- Analytics & Adsense -->
+	{{ partial "google/analytics" . }}
+	{{ partial "google/adsense" . }}
 </head>
